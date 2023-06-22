@@ -10,11 +10,11 @@
 #  Variables
 #########################
 resourceDir="/scratch1/jlee0087/resources/b37"
-outputDir="/scratch1/jlee0087/projects/bams"
-logDir="/scratch1/jlee0087/projects/genome/logs/"
+outputDir="/scratch1/jlee0087/projects/exome_exercise/bams"
+logDir="/scratch1/jlee0087/projects/exome_exercise/genome/logs/"
 outPrefix="NA12878"
-fq1_r1="/scratch1/jlee0087/projects/genome/fastqs/NIST7035_TAAGGCGA_L001_R1_001.fastq.gz"
-fq1_r2="/scratch1/jlee0087/projects/genome/fastqs/NIST7035_TAAGGCGA_L001_R2_001.fastq.gz"
+fq1_r1="/scratch1/jlee0087/projects/exome_exercise/genome/fastqs/NIST7035_TAAGGCGA_L001_R1_001.fastq.gz"
+fq1_r2="/scratch1/jlee0087/projects/exome_exercise/genome/fastqs/NIST7035_TAAGGCGA_L001_R2_001.fastq.gz"
 ########################
 #  Setup
 #########################
