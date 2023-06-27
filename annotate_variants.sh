@@ -10,7 +10,7 @@
 ###########################
 # SETUP
 ###########################
-module load gcc/8.3.0 snpeff openjdk
+module load gcc/11.3.0 openjdk/11.0.15_10
 
 ###########################
 # VARIABLES
