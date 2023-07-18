@@ -1,0 +1,37 @@
+==========================================
+SLURM_JOB_ID = 15697349
+SLURM_JOB_NODELIST = e15-01
+TMPDIR = /tmp/SLURM_15697349
+==========================================
+13:51:30.440 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/project/davidwcr_264/Packages/gatk/4.2.6.1/gatk-package-4.2.6.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+13:51:30.679 INFO  BaseRecalibrator - ------------------------------------------------------------
+13:51:30.680 INFO  BaseRecalibrator - The Genome Analysis Toolkit (GATK) v4.2.6.1
+13:51:30.680 INFO  BaseRecalibrator - For support and documentation go to https://software.broadinstitute.org/gatk/
+13:51:30.680 INFO  BaseRecalibrator - Executing as jlee0087@e15-01.hpc.usc.edu on Linux v3.10.0-1160.71.1.el7.x86_64 amd64
+13:51:30.681 INFO  BaseRecalibrator - Java runtime: OpenJDK 64-Bit Server VM v11.0.15+10
+13:51:30.681 INFO  BaseRecalibrator - Start Date/Time: July 12, 2023 at 1:51:30 PM PDT
+13:51:30.681 INFO  BaseRecalibrator - ------------------------------------------------------------
+13:51:30.682 INFO  BaseRecalibrator - ------------------------------------------------------------
+13:51:30.683 INFO  BaseRecalibrator - HTSJDK Version: 2.24.1
+13:51:30.683 INFO  BaseRecalibrator - Picard Version: 2.27.1
+13:51:30.683 INFO  BaseRecalibrator - Built for Spark Version: 2.4.5
+13:51:30.683 INFO  BaseRecalibrator - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+13:51:30.684 INFO  BaseRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+13:51:30.684 INFO  BaseRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+13:51:30.684 INFO  BaseRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+13:51:30.685 INFO  BaseRecalibrator - Deflater: IntelDeflater
+13:51:30.685 INFO  BaseRecalibrator - Inflater: IntelInflater
+13:51:30.685 INFO  BaseRecalibrator - GCS max retries/reopens: 20
+13:51:30.686 INFO  BaseRecalibrator - Requester pays: disabled
+13:51:30.686 INFO  BaseRecalibrator - Initializing engine
+13:51:31.088 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch1/jlee0087/projects/exome_exercise/vcfs/Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf
+13:51:31.125 INFO  BaseRecalibrator - Done initializing engine
+13:51:31.128 INFO  BaseRecalibrator - Shutting down engine
+[July 12, 2023 at 1:51:31 PM PDT] org.broadinstitute.hellbender.tools.walkers.bqsr.BaseRecalibrator done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=1006632960
+***********************************************************************
+
+A USER ERROR has occurred: Number of read groups must be >= 1, but is 0
+
+***********************************************************************
+Set the system property GATK_STACKTRACE_ON_USER_EXCEPTION (--java-options '-DGATK_STACKTRACE_ON_USER_EXCEPTION=true') to print the stack trace.

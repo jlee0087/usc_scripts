@@ -1,0 +1,27 @@
+==========================================
+SLURM_JOB_ID = 15697366
+SLURM_JOB_NODELIST = e15-01
+TMPDIR = /tmp/SLURM_15697366
+==========================================
+[Wed Jul 12 13:53:57 PDT 2023] picard.sam.AddOrReplaceReadGroups INPUT=/scratch1/jlee0087/projects/exome_exercise/bams/marked.merged.NA12878.bam OUTPUT=/scratch1/jlee0087/projects/exome_exercise/bams/marked.merged.NA12878.bam RGID=1 RGLB=library RGPL=illumina RGPU=unit RGSM=sample    VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Wed Jul 12 13:53:57 PDT 2023] Executing as jlee0087@e15-01.hpc.usc.edu on Linux 3.10.0-1160.71.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.15+10; Picard version: 2.9.0-1-gf5b9f50-SNAPSHOT
+INFO	2023-07-12 13:53:57	AddOrReplaceReadGroups	Created read group ID=1 PL=illumina LB=library SM=sample
+
+[Wed Jul 12 13:53:57 PDT 2023] picard.sam.AddOrReplaceReadGroups done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=1006632960
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.util.RuntimeEOFException: Premature EOF. Expected 2 but only received 0; BinaryCodec in readmode; file: /scratch1/jlee0087/projects/exome_exercise/bams/marked.merged.NA12878.bam
+	at htsjdk.samtools.util.BinaryCodec.readBytes(BinaryCodec.java:383)
+	at htsjdk.samtools.util.BinaryCodec.readByteBuffer(BinaryCodec.java:490)
+	at htsjdk.samtools.util.BinaryCodec.readUShort(BinaryCodec.java:570)
+	at htsjdk.samtools.BAMRecordCodec.decode(BAMRecordCodec.java:192)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.getNextRecord(BAMFileReader.java:813)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.advance(BAMFileReader.java:787)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:781)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:751)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:569)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:543)
+	at picard.sam.AddOrReplaceReadGroups.doWork(AddOrReplaceReadGroups.java:140)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:205)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:94)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:104)

@@ -1,0 +1,40 @@
+==========================================
+SLURM_JOB_ID = 15696544
+SLURM_JOB_NODELIST = d11-32
+TMPDIR = /tmp/SLURM_15696544
+==========================================
+--2023-07-12 11:43:08--  https://storage.cloud.google.com/gcp-public-data--broad-references/Homo_sapiens_assembly19_1000genomes_decoy/Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf
+Resolving storage.cloud.google.com (storage.cloud.google.com)... 142.250.189.14, 2607:f8b0:4007:817::200e
+Connecting to storage.cloud.google.com (storage.cloud.google.com)|142.250.189.14|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://accounts.google.com/ServiceLogin?service=cds&passive=1209600&continue=https://storage.cloud.google.com/gcp-public-data--broad-references/Homo_sapiens_assembly19_1000genomes_decoy/Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf&followup=https://storage.cloud.google.com/gcp-public-data--broad-references/Homo_sapiens_assembly19_1000genomes_decoy/Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf [following]
+--2023-07-12 11:43:08--  https://accounts.google.com/ServiceLogin?service=cds&passive=1209600&continue=https://storage.cloud.google.com/gcp-public-data--broad-references/Homo_sapiens_assembly19_1000genomes_decoy/Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf&followup=https://storage.cloud.google.com/gcp-public-data--broad-references/Homo_sapiens_assembly19_1000genomes_decoy/Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf
+Resolving accounts.google.com (accounts.google.com)... 142.250.68.77, 2607:f8b0:4007:811::200d
+Connecting to accounts.google.com (accounts.google.com)|142.250.68.77|:443... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://accounts.google.com/InteractiveLogin?continue=https://storage.cloud.google.com/gcp-public-data--broad-references/Homo_sapiens_assembly19_1000genomes_decoy/Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf&followup=https://storage.cloud.google.com/gcp-public-data--broad-references/Homo_sapiens_assembly19_1000genomes_decoy/Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf&passive=1209600&service=cds&ifkv=AeDOFXgCmmpo7YsXg7BYT4T6lIC_sMlRxrmgJI2_LJrbZx1eopRzxFEv0k7nKkT4GjjbtQE5JySxGw [following]
+--2023-07-12 11:43:08--  https://accounts.google.com/InteractiveLogin?continue=https://storage.cloud.google.com/gcp-public-data--broad-references/Homo_sapiens_assembly19_1000genomes_decoy/Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf&followup=https://storage.cloud.google.com/gcp-public-data--broad-references/Homo_sapiens_assembly19_1000genomes_decoy/Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf&passive=1209600&service=cds&ifkv=AeDOFXgCmmpo7YsXg7BYT4T6lIC_sMlRxrmgJI2_LJrbZx1eopRzxFEv0k7nKkT4GjjbtQE5JySxGw
+Reusing existing connection to accounts.google.com:443.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://accounts.google.com/v3/signin/identifier?dsh=S386262579%3A1689187388399339&continue=https%3A%2F%2Fstorage.cloud.google.com%2Fgcp-public-data--broad-references%2FHomo_sapiens_assembly19_1000genomes_decoy%2FHomo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf&followup=https%3A%2F%2Fstorage.cloud.google.com%2Fgcp-public-data--broad-references%2FHomo_sapiens_assembly19_1000genomes_decoy%2FHomo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf&ifkv=AeDOFXg6d-rjLXz4JGWnjGLxPUARV0B6036hTywH7wCRb89Y1t_gLWSCFSc6HWOc4ZFQWWWcSubYsg&passive=1209600&service=cds&flowName=WebLiteSignIn&flowEntry=ServiceLogin [following]
+--2023-07-12 11:43:08--  https://accounts.google.com/v3/signin/identifier?dsh=S386262579%3A1689187388399339&continue=https%3A%2F%2Fstorage.cloud.google.com%2Fgcp-public-data--broad-references%2FHomo_sapiens_assembly19_1000genomes_decoy%2FHomo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf&followup=https%3A%2F%2Fstorage.cloud.google.com%2Fgcp-public-data--broad-references%2FHomo_sapiens_assembly19_1000genomes_decoy%2FHomo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf&ifkv=AeDOFXg6d-rjLXz4JGWnjGLxPUARV0B6036hTywH7wCRb89Y1t_gLWSCFSc6HWOc4ZFQWWWcSubYsg&passive=1209600&service=cds&flowName=WebLiteSignIn&flowEntry=ServiceLogin
+Reusing existing connection to accounts.google.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: 'Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf'
+
+     0K .......... .......... .......... .......... ..........  705K
+    50K .......... .......... .......... .......... .......... 1.18M
+   100K .......... .......... .......... .......... .......... 1.08M
+   150K .......... .......... .......... .......... .......... 1.23M
+   200K .......... .......... .......... .......... .......... 1.33M
+   250K .......... .......... .......... .......... .......... 1.35M
+   300K .......... .......... .......... .......... .......... 1.70M
+   350K .......... .......... .......... .......... .......... 1.11M
+   400K .......... .......... .......... .......... ..........  936K
+   450K .......... .......... .......... .......... .......... 1.24M
+   500K .......... .......... .......... .......... ..........  683K
+   550K .......... .........                                   1.35M=0.5s
+
+2023-07-12 11:43:09 (1.06 MB/s) - 'Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf' saved [583230]
+

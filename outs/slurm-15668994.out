@@ -1,0 +1,58 @@
+==========================================
+SLURM_JOB_ID = 15668994
+SLURM_JOB_NODELIST = e14-42
+TMPDIR = /tmp/SLURM_15668994
+==========================================
+ERROR: Invalid argument '-R'.
+
+USAGE: CreateSequenceDictionary [options]
+
+Documentation: http://broadinstitute.github.io/picard/command-line-overview.html#CreateSequenceDictionary
+
+Creates a sequence dictionary for a reference sequence.  This tool creates a sequence dictionary file (with ".dict" extension) from a reference sequence provided in FASTA format, which is required by many processing and analysis tools. The output file contains a header but no SAMRecords, and the header contains only sequence records.
+
+The reference sequence can be gzipped (both .fasta and .fasta.gz are supported).
+Usage example:
+
+java -jar picard.jar CreateSequenceDictionary \ 
+      R=reference.fasta \ 
+      O=reference.dict
+
+
+Version: 2.9.0-1-gf5b9f50-SNAPSHOT
+
+
+Options:
+
+--help
+-h                            Displays options specific to this tool.
+
+--stdhelp
+-H                            Displays options specific to this tool AND options common to all Picard command line 
+                              tools.
+
+--version                     Displays program version.
+
+REFERENCE=File
+R=File                        Input reference fasta or fasta.gz  Required. 
+
+OUTPUT=File
+O=File                        Output SAM file containing only the sequence dictionary. By default it will use the base 
+                              name of the input reference with the .dict extension  Default value: null. 
+
+GENOME_ASSEMBLY=String        Put into AS field of sequence dictionary entry if supplied  Default value: null. 
+
+URI=String                    Put into UR field of sequence dictionary entry.  If not supplied, input reference file is 
+                              used  Default value: null. 
+
+SPECIES=String                Put into SP field of sequence dictionary entry  Default value: null. 
+
+TRUNCATE_NAMES_AT_WHITESPACE=Boolean
+                              Make sequence name the first word from the > line in the fasta file.  By default the 
+                              entire contents of the > line is used, excluding leading and trailing whitespace.  
+                              Default value: true. This option can be set to 'null' to clear the default value. 
+                              Possible values: {true, false} 
+
+NUM_SEQUENCES=Integer         Stop after writing this many sequences.  For testing.  Default value: 2147483647. This 
+                              option can be set to 'null' to clear the default value. 
+

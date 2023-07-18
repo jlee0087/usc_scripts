@@ -1,0 +1,7 @@
+==========================================
+SLURM_JOB_ID = 15697229
+SLURM_JOB_NODELIST = e15-01
+TMPDIR = /tmp/SLURM_15697229
+==========================================
+/var/spool/slurm/d/job15697229/slurm_script: line 23: unexpected EOF while looking for matching `"'
+/var/spool/slurm/d/job15697229/slurm_script: line 36: syntax error: unexpected end of file

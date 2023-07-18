@@ -1,0 +1,10 @@
+==========================================
+SLURM_JOB_ID = 15668847
+SLURM_JOB_NODELIST = e14-43
+TMPDIR = /tmp/SLURM_15668847
+==========================================
+[Tue Jul 11 15:07:03 PDT 2023] picard.sam.ValidateSamFile INPUT=/scratch1/jlee0087/projects/exome_exercise/bams/sorted.merged.NA12878.bam MODE=SUMMARY    MAX_OUTPUT=100 IGNORE_WARNINGS=false VALIDATE_INDEX=true INDEX_VALIDATION_STRINGENCY=EXHAUSTIVE IS_BISULFITE_SEQUENCED=false MAX_OPEN_TEMP_FILES=8000 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Tue Jul 11 15:07:03 PDT 2023] Executing as jlee0087@e14-43.hpc.usc.edu on Linux 3.10.0-1160.71.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.15+10; Picard version: 2.9.0-1-gf5b9f50-SNAPSHOT
+No errors found
+[Tue Jul 11 15:07:04 PDT 2023] picard.sam.ValidateSamFile done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=1006632960

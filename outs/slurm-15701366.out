@@ -1,0 +1,44 @@
+==========================================
+SLURM_JOB_ID = 15701366
+SLURM_JOB_NODELIST = e07-07
+TMPDIR = /tmp/SLURM_15701366
+==========================================
+17:02:49.125 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/project/davidwcr_264/Packages/gatk/4.2.6.1/gatk-package-4.2.6.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+17:02:49.419 INFO  BaseRecalibrator - ------------------------------------------------------------
+17:02:49.421 INFO  BaseRecalibrator - The Genome Analysis Toolkit (GATK) v4.2.6.1
+17:02:49.424 INFO  BaseRecalibrator - For support and documentation go to https://software.broadinstitute.org/gatk/
+17:02:49.426 INFO  BaseRecalibrator - Executing as jlee0087@e07-07.hpc.usc.edu on Linux v3.10.0-1160.71.1.el7.x86_64 amd64
+17:02:49.429 INFO  BaseRecalibrator - Java runtime: OpenJDK 64-Bit Server VM v11.0.15+10
+17:02:49.430 INFO  BaseRecalibrator - Start Date/Time: July 12, 2023 at 5:02:49 PM PDT
+17:02:49.433 INFO  BaseRecalibrator - ------------------------------------------------------------
+17:02:49.435 INFO  BaseRecalibrator - ------------------------------------------------------------
+17:02:49.436 INFO  BaseRecalibrator - HTSJDK Version: 2.24.1
+17:02:49.439 INFO  BaseRecalibrator - Picard Version: 2.27.1
+17:02:49.440 INFO  BaseRecalibrator - Built for Spark Version: 2.4.5
+17:02:49.441 INFO  BaseRecalibrator - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+17:02:49.444 INFO  BaseRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+17:02:49.447 INFO  BaseRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+17:02:49.451 INFO  BaseRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+17:02:49.452 INFO  BaseRecalibrator - Deflater: IntelDeflater
+17:02:49.456 INFO  BaseRecalibrator - Inflater: IntelInflater
+17:02:49.457 INFO  BaseRecalibrator - GCS max retries/reopens: 20
+17:02:49.460 INFO  BaseRecalibrator - Requester pays: disabled
+17:02:49.462 INFO  BaseRecalibrator - Initializing engine
+17:02:50.081 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch1/jlee0087/projects/exome_exercise/vcfs/Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf
+17:02:50.530 INFO  BaseRecalibrator - Done initializing engine
+17:02:50.533 INFO  BaseRecalibrationEngine - The covariates being used here: 
+17:02:50.534 INFO  BaseRecalibrationEngine - 	ReadGroupCovariate
+17:02:50.535 INFO  BaseRecalibrationEngine - 	QualityScoreCovariate
+17:02:50.535 INFO  BaseRecalibrationEngine - 	ContextCovariate
+17:02:50.536 INFO  BaseRecalibrationEngine - 	CycleCovariate
+17:02:50.543 INFO  ProgressMeter - Starting traversal
+17:02:50.544 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
+17:02:50.565 INFO  BaseRecalibrator - Shutting down engine
+[July 12, 2023 at 5:02:50 PM PDT] org.broadinstitute.hellbender.tools.walkers.bqsr.BaseRecalibrator done. Elapsed time: 0.02 minutes.
+Runtime.totalMemory()=1006632960
+***********************************************************************
+
+A USER ERROR has occurred: Input /scratch1/jlee0087/projects/exome_exercise/vcfs/Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf must support random access to enable queries by interval. If it's a file, please index it using the bundled tool IndexFeatureFile
+
+***********************************************************************
+Set the system property GATK_STACKTRACE_ON_USER_EXCEPTION (--java-options '-DGATK_STACKTRACE_ON_USER_EXCEPTION=true') to print the stack trace.
