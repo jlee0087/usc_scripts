@@ -7,20 +7,28 @@
 #SBATCH --exclusive
 #SBATCH --mem=0GB
 #SBATCH --time=24:00:00
+#SBATCH --partition=dtg
 ###########################
 # SETUP
 ###########################
-
+module load gcc/11.3.0 openblas/0.3.20 bcftools/1.14
 
 ###########################
 # VARIABLES
 ###########################
-module load gcc/11.3.0
+outputdir="/scratch1/jlee0087/projects/exome_exercise/vcfs/"
+input_vcf="/scratch1/jlee0087/projects/case_study/CRDC0005_FAM32.snpeff.vcf"
 
-cd /scratch1/jlee0087/projects/exome_exercise/vcfs/
-
-wget https://storage.googleapis.com/gcp-public-data--broad-references/Homo_sapiens_assembly19_1000genomes_decoy/Homo_sapiens_assembly19_1000genomes_decoy.variantEval.dbsnp.vcf
-
+output_vcf="/scratch1/jlee0087/projects/case_study/temp.vcf"
 ###########################
 # COMMANDS
 ###########################
+cd ${outputdir}
+
+bcftools view -i 'INFO/ANN~"HIGH"' ${input_vcf} > ${output_vcf}
+
+
+
+ 
+
+

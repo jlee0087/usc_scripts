@@ -16,13 +16,13 @@ module load gcc/11.3.0 openjdk/11.0.15_10
 ###########################
 # VARIABLES
 ###########################
-workingDir="/scratch1/jlee0087/projects/exome_exercise/vcfs"
-input_vcf="/scratch1/jlee0087/projects/exome_exercise/vcfs/recal.marked.merged.NA12878.vcf"
-output_name="/scratch1/jlee0087/projects/exome_exercise/vcfs/annotated.NA12878.vcf"
+input_vcf="/scratch1/jlee0087/projects/case_study/high.qual.db.sort.vcf"
+output_name="/scratch1/jlee0087/projects/case_study/dbsnp.high.qual.sort.vcf"
 snpeffpath="/project/davidwcr_264/Packages/snpEff_new/4.3/"
+dbsnppath="/scratch1/jlee0087/resources/00-All.vcf.gz"
 ###########################
 # COMMANDS
 ###########################
 cd $workingDir
-java -Xmx16g -jar $snpeffpath/snpEff.jar GRCh37.75 ${input_vcf} > ${output_name}
+java  -Xmx16g -jar ${snpeffpath}/SnpSift.jar annotate ${dbsnppath} ${input_vcf} > ${output_name}
 

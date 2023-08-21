@@ -16,16 +16,19 @@ module load gcc/11.3.0 openblas/0.3.20 bcftools/1.14
 ###########################
 # VARIABLES
 ###########################
-outputdir="/scratch1/jlee0087/projects/exome_exercise/vcfs/intersection"
-input_vcf="/scratch1/jlee0087/projects/exome_exercise/vcfs/canon.annotated.variant_filter.NA12878.vcf.gz"
-reference_vcf="/scratch1/jlee0087/projects/exome_exercise/vcfs/Homo_sapiens_assembly19_1000genomes_decoy_Homo_sapiens_assembly19_1000genomes_decoy.variantEvalGoldStandard.vcf.gz"
+outputdir="/scratch1/jlee0087/projects/exome_exercise/vcfs/"
+input_vcf="/scratch1/jlee0087/projects/case_study/dbsnp.high.qual.sort.vcf"
 
+output_vcf="/scratch1/jlee0087/projects/case_study/af.dbsnp.high.qual.sort.vcf"
 ###########################
 # COMMANDS
 ###########################
-mkdir ${outputdir}
+cd ${outputdir}
 
-bcftools isec -p ${outputdir} ${input_vcf} ${reference_vcf}
+bcftools view -i 'INFO/CAF < 0.001' ${input_vcf} > ${output_vcf}
+
+
+
  
 
 
